@@ -6,8 +6,8 @@ try:
 except ImportError:
     from distutils.core import setup
 
-from _mpld3_setup import (require_clean_submodules, UpdateSubmodules,
-                          check_js_build_status, BuildJavascript, get_version)
+from _mpld3_setup import (require_clean_submodules, UpdateSubmodules, get_version)
+# check_js_build_status, BuildJavascript
 
 DESCRIPTION = "D3 Viewer for Matplotlib"
 LONG_DESCRIPTION = open('README.md').read()
@@ -41,8 +41,8 @@ setup(name=NAME,
       url=URL,
       download_url=DOWNLOAD_URL,
       license=LICENSE,
-      cmdclass={'submodule': UpdateSubmodules,
-                'buildjs': BuildJavascript},
+      cmdclass={'submodule': UpdateSubmodules},
+      # , 'buildjs': BuildJavascript
       packages=['mpld3',
                 'mpld3/mplexporter',
                 'mpld3/mplexporter/renderers'],
