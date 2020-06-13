@@ -11,7 +11,7 @@ from _mpld3_setup import (require_clean_submodules, UpdateSubmodules,
 
 DESCRIPTION = "D3 Viewer for Matplotlib"
 LONG_DESCRIPTION = open('README.md').read()
-NAME = "mpld3"
+NAME = "mpld3-valuegrid"
 AUTHOR = "Jake VanderPlas"
 AUTHOR_EMAIL = "jakevdp@cs.washington.edu"
 MAINTAINER = "Jake VanderPlas"
