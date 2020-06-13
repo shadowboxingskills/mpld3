@@ -43,9 +43,9 @@ setup(name=NAME,
       license=LICENSE,
       cmdclass={'submodule': UpdateSubmodules},
       # , 'buildjs': BuildJavascript
-#       packages=['mpld3',
-#                 'mpld3/mplexporter',
-#                 'mpld3/mplexporter/renderers'],
+      packages=['mpld3',
+                'mpld3/mplexporter',
+                'mpld3/mplexporter/renderers'],
 #       package_data={'mpld3': ['js/*.js']},
       install_requires=["jinja2", "matplotlib"],
       classifiers=[
