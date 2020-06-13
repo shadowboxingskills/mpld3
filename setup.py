@@ -26,8 +26,8 @@ root_dir = os.path.abspath(os.path.dirname(__file__))
 require_clean_submodules(root_dir, sys.argv)
 
 # Warn if it looks like JS libs need to be built
-if 'buildjs' not in sys.argv:
-    check_js_build_status(VERSION, root_dir)
+#if 'buildjs' not in sys.argv:
+#    check_js_build_status(VERSION, root_dir)
 
 
 setup(name=NAME,
